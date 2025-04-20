@@ -1,0 +1,132 @@
+.rental-details-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: #1e3a8a;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.rental-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.rental-details-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rental-details-info h1 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.rental-details-location {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.rental-details-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+}
+
+.highlight-item-icon {
+  margin-right: 0.5rem;
+  color: #1e3a8a;
+}
+
+.rental-details-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.rental-details-amenities {
+  margin-bottom: 1.5rem;
+}
+
+.rental-details-amenities h3 {
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.amenity-tag {
+  background-color: #e6f2ff;
+  color: #1e3a8a;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.booking-section {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.booking-section h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.booking-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.booking-button {
+  width: 100%;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .rental-details-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .rental-details-image img {
+    height: 300px;
+  }
+}
+
